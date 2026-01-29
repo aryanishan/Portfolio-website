@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | DevPortfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Dev<span>Portfolio</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html" class="active">Contact</a>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="section-title">Get In <span class="highlight">Touch</span></h1>
+                <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2>Send Me a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your name">
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Select a subject</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="mobile">Mobile App</option>
+                                    <option value="design">UI/UX Design</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Project Budget</label>
+                                <div class="budget-options">
+                                    <label class="budget-option">
+                                        <input type="radio" name="budget" value="<1000">
+                                        <span>&lt; $1,000</span>
+                                    </label>
+                                    <label class="budget-option">
+                                        <input type="radio" name="budget" value="1000-5000">
+                                        <span>$1,000 - $5,000</span>
+                                    </label>
+                                    <label class="budget-option">
+                                        <input type="radio" name="budget" value=">5000">
+                                        <span>&gt; $5,000</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required rows="6" placeholder="Tell me about your project..."></textarea>
+                                <div class="error-message"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    <span>Subscribe to my newsletter for web development tips</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            
+                            <div class="form-success" id="formSuccess">
+                                <i class="fas fa-check-circle"></i>
+                                <p>Thank you! Your message has been sent successfully.</p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-section">
+                        <div class="contact-info-card">
+                            <h3>Contact Information</h3>
+                            <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                            
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h4>Email</h4>
+                                        <a href="mailto:hello@devportfolio.com">hello@devportfolio.com</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h4>Phone</h4>
+                                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4>Location</h4>
+                                        <p>San Francisco, CA</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="working-hours">
+                                <h4>Working Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM PST</p>
+                                <p>Response Time: Within 24 hours</p>
+                            </div>
+                            
+                            <div class="social-contact">
+                                <h4>Connect Socially</h4>
+                                <div class="social-links">
+                                    <a href="#" class="social-btn">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="#" class="social-btn">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                    <a href="#" class="social-btn">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-section">
+                            <h3>Frequently Asked Questions</h3>
+                            <div class="faq-item">
+                                <input type="checkbox" id="faq1" class="faq-toggle">
+                                <label for="faq1" class="faq-question">
+                                    How long does a typical project take?
+                                    <i class="fas fa-chevron-down"></i>
+                                </label>
+                                <div class="faq-answer">
+                                    <p>Project timelines vary based on complexity. A simple website takes 2-3 weeks, while complex applications can take 2-3 months.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <input type="checkbox" id="faq2" class="faq-toggle">
+                                <label for="faq2" class="faq-question">
+                                    What's your payment structure?
+                                    <i class="fas fa-chevron-down"></i>
+                                </label>
+                                <div class="faq-answer">
+                                    <p>Typically 50% upfront and 50% upon completion. For larger projects, we can arrange milestone-based payments.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <input type="checkbox" id="faq3" class="faq-toggle">
+                                <label for="faq3" class="faq-question">
+                                    Do you provide ongoing maintenance?
+                                    <i class="fas fa-chevron-down"></i>
+                                </label>
+                                <div class="faq-answer">
+                                    <p>Yes, I offer maintenance packages starting at $99/month which include updates, backups, and technical support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DevPortfolio</h3>
+                    <p>Creating digital experiences that inspire and engage users.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DevPortfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/minimal.js"></script>
+</body>
+</html>
